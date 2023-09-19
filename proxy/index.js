@@ -37,9 +37,9 @@ app.get('/:zoom/:x/:y', (clientReq, clientRes) => {
 
     // Change this to your map provider. Refer to their documentation for url, should be something under 'XYZ tiles'.
     // XYZ tiles typically have 3 servers, a, b and c for reliability.
-    const mapUrlA = `https://maps-a.onemap.sg/v3/Satellite/${zoom}/${x}/${y}.png`;
-    const mapUrlB = `https://maps-b.onemap.sg/v3/Satellite/${zoom}/${x}/${y}.png`;
-    const mapUrlC = `https://maps-c.onemap.sg/v3/Satellite/${zoom}/${x}/${y}.png`;
+    const mapUrlA = `https://map1.eniro.no/geowebcache/service/tms1.0.0/aerial/${zoom}/${x}/${y}.jpeg`;
+    const mapUrlB = `https://map2.eniro.no/geowebcache/service/tms1.0.0/aerial/${zoom}/${x}/${y}.jpeg`;
+    const mapUrlC = `https://map3.eniro.no/geowebcache/service/tms1.0.0/aerial/${zoom}/${x}/${y}.jpeg`;
 
     console.log('Attempting to retrieve from A server:', mapUrlA);
 
